@@ -9,7 +9,7 @@ const Page = () => {
         <Layout>
             <Container>
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} mt={6} align="center">
-                    Hello 👋 I&apos;m a creative web developer from Merseyside
+                    Hello 👋 I&apos;m a developer from St Helens
                 </Box>
 
                 <Box display={{md:'flex'}}>
@@ -49,17 +49,20 @@ const Page = () => {
                         Born in St Helens, Merseyside.
                     </BioSection>
                     <BioSection>
+                        <BioYear>2005</BioYear>
+                        Graduated from Sutton Academy, St Helens.
+                    </BioSection>
+                    <BioSection>
                         <BioYear>2007</BioYear>
-                        Completed National Certificate in Music Technology at St Helens College.
+                        Graduated from St Helens College with a National Certificate in Music Technology (NC2).
                     </BioSection>
                     <BioSection>
                         <BioYear>2008</BioYear>
-                        First job as a Junior Web Developer.
+                        Landed first job as a Web Designer.
                     </BioSection>
-                    
                     <BioSection>
                         <BioYear>2014</BioYear>
-                        Completed Foundation Degree in Music Production and Sound Design at Liverpool John Moore&apos;s University.
+                        Graduated from Liverpool John Moore&apos;s University with a Degree in Music Production and Sound Design (FDA).
                     </BioSection>
                     <BioSection>
                         <BioYear>2015</BioYear>
@@ -67,16 +70,25 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>2017</BioYear>
-                        Seconded to Churchill Sloan as a Head of Web Dev &amp; Digital Marketing. Moved to Newton-Le-Willows.
+                        Seconded to Churchill Sloan as a Head of Web Development &amp; Digital Marketing. Moved to Newton-Le-Willows.
                     </BioSection>
                     <BioSection>
                         <BioYear>2018</BioYear>
-                        Became Web Development Manager at Gladstone Brookes.
+                        Secured new position as Web Development Manager at Gladstone Brookes.
                     </BioSection>
                     <BioSection>
                         <BioYear>2021</BioYear>
-                        To be continued...
+                        Left Gladstone Brookes and moved to GRV Media as a Senior Developer.
                     </BioSection>
+                </Section>
+                <Section delay={0.4}>
+                    <Heading as="h3" variant="section-title" mt={10}>
+                        Stack
+                    </Heading>
+                    <Paragraph>
+                        I coded this portfolio with the <strong>React.js</strong> framework <strong>Next.js</strong>, using <strong>Chakra UI</strong> with <strong>Framer Motion</strong> and <strong>Three.js</strong>.<br />
+                    </Paragraph>
+                    <p mt={8}><small>The 3D Render of my head I made using Blender</small></p>
                 </Section>
             </Container>
         </Layout>

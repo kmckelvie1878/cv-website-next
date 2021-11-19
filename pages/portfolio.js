@@ -1,7 +1,7 @@
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-import thumbExampleOne from '../public/images/avatar.jpg'
+import billyPlaysBanjo from '../public/images/avatar.jpg'
 import Layout from '../components/layouts/article'
 
 const Portfolio = () => {
@@ -17,22 +17,22 @@ const Portfolio = () => {
                 </Heading>
                 <SimpleGrid columns={[1,1,2]} gap={6}>
                     <Section>
-                        <WorkGridItem id="example1" title="BillyPlaysBanjo" thumbnail={thumbExampleOne}>
+                        <WorkGridItem id="billyplaysbanjo" title="BillyPlaysBanjo" thumbnail={billyPlaysBanjo}>
                             An avatar I created for my music project using Adobe Illustrator. 
                         </WorkGridItem>
                     </Section>
                     <Section>
-                        <WorkGridItem id="example1" title="BillyPlaysBanjo" thumbnail={thumbExampleOne}>
+                        <WorkGridItem id="example1" title="BillyPlaysBanjo" thumbnail={billyPlaysBanjo}>
                             An avatar I created for my music project using Adobe Illustrator. 
                         </WorkGridItem>
                     </Section>
                     <Section>
-                        <WorkGridItem id="example1" title="BillyPlaysBanjo" thumbnail={thumbExampleOne}>
+                        <WorkGridItem id="example1" title="BillyPlaysBanjo" thumbnail={billyPlaysBanjo}>
                             An avatar I created for my music project using Adobe Illustrator. 
                         </WorkGridItem>
                     </Section>
                     <Section>
-                        <WorkGridItem id="example1" title="BillyPlaysBanjo" thumbnail={thumbExampleOne}>
+                        <WorkGridItem id="example1" title="BillyPlaysBanjo" thumbnail={billyPlaysBanjo}>
                             An avatar I created for my music project using Adobe Illustrator. 
                         </WorkGridItem>
                     </Section>

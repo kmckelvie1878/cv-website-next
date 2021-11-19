@@ -76,7 +76,7 @@ const Laptop = () => {
             controls.target = target
             setControls(controls)
 
-            loadGLTFModel(scene, '/images/fire.glb', {
+            loadGLTFModel(scene, '/images/computer.glb', {
                 receiveShadow: false,
                 castShadow: false
             }).then(() => {
@@ -124,8 +124,8 @@ const Laptop = () => {
         ref={refContainer}
         className='laptop'
         m="auto"
-        mt={[ '0px', '-30px', '-80px' ]}
-        mb={['-40px', '-140px', '-200px' ]}
+        mt={[ '0px', '-30px', '-70px' ]}
+        mb={['-30px', '-120px', '-180px' ]}
         w={[280, 480, 640]}
         h={[280, 480, 640]}
         position="relative"
