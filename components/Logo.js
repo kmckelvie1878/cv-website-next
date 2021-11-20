@@ -29,7 +29,7 @@ const Logo = () => {
                         fontWeight="bold"
                         ml={2}
                     >
-                        Kieran McKelvie
+                        McKelvie.dev
                     </Text>
                 </LogoBox>
             </a>

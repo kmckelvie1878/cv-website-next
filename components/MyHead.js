@@ -3,8 +3,8 @@ import { Box, Spinner } from '@chakra-ui/react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
-import { render } from 'react-dom'
-import { animate } from 'framer-motion'
+// import { render } from 'react-dom'
+// import { animate } from 'framer-motion'
 
 function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -125,7 +125,7 @@ const MyHead = () => {
         className='my-head'
         m="auto"
         mt={[ '0px', '40px', '20px' ]}
-        mb={['-120px', '-150px', '-270px' ]}
+        mb={['-120px', '-150px', '-290px' ]}
         w={[280, 480, 640]}
         h={[280, 480, 640]}
         position="relative"

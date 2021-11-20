@@ -19,7 +19,7 @@ const Portfolio = () => {
                 <SimpleGrid columns={[1,1,2]} gap={6}>
                     <Section>
                         <WorkGridItem id="selfportrait" title="3D Self Portrait" thumbnail={RenderHead}>
-                            I used Blender to create a 3D render of my head for this portfolio.
+                            I used Blender to create a 3D render of my head for my website.
                         </WorkGridItem>
                     </Section>
                     <Section>
@@ -28,6 +28,7 @@ const Portfolio = () => {
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>
+                <Divider />
             </Container>
         </Layout>
     )

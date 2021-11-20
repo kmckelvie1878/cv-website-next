@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Navbar from '../Navbar'
 import { Box, Container } from '@chakra-ui/react'
-import Laptop from '../laptop'
 import MyHead from '../MyHead'
 import NoSsr from '../no-ssr'
 
