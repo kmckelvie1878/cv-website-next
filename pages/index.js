@@ -18,7 +18,6 @@ import Layout from '../components/layouts/article'
 // import { GridItem } from '../components/grid-item'
 import {
     IoLogoCss3,
-    IoLogoDiscord,
     IoLogoFirebase,
     IoLogoGithub,
     IoLogoHtml5,
@@ -29,7 +28,6 @@ import {
     IoLogoPwa,
     IoLogoReact,
     IoLogoSass,
-    IoLogoSlack,
     IoLogoVue,
     IoLogoWordpress
 } from 'react-icons/io5'
