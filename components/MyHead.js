@@ -15,7 +15,7 @@ const MyHead = () => {
     const [loading, setLoading] = useState(true)
     const [renderer, setRenderer] = useState()
     const [_camera, setCamera] = useState()
-    const [target] = useState(new THREE.Vector3(-0.5, -1.2, 0))
+    const [target] = useState(new THREE.Vector3(-0.15, -1.2, 0))
     const [initialCameraPosition] = useState(
         new THREE.Vector3(
             20 * Math.sin(0.2 * Math.PI),
@@ -55,7 +55,7 @@ const MyHead = () => {
 
             // 640 -> 240
             // 8 -> 6
-            const scale = scH * 0.0025 + 2.4
+            const scale = scH * 0.0025 + 1.6
             const camera = new THREE.OrthographicCamera(
                 -scale,
                 scale,
@@ -124,8 +124,8 @@ const MyHead = () => {
         ref={refContainer}
         className='my-head'
         m="auto"
-        mt={[ '0px', '-30px', '-70px' ]}
-        mb={['-30px', '-120px', '-180px' ]}
+        mt={[ '0px', '40px', '20px' ]}
+        mb={['-120px', '-150px', '-270px' ]}
         w={[280, 480, 640]}
         h={[280, 480, 640]}
         position="relative"

@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article'
 const Work = () => {
     return (
         <Layout title="BillyPlaysBanjo">
-            <Container>
+            <Container maxW="container.lg">
                 <Title>BillyPlaysBanjo 🪕 <Badge>2021</Badge></Title>
                 <P>Illustrated avatar &amp; branding concept for my folk music project. Created using a still image from one of my videos and drawing out the vector shapes and layers.</P>
                 <List ml={4} my={4}>

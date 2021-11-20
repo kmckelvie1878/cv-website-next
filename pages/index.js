@@ -1,15 +1,33 @@
-import { Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
+import {
+    Container,
+    Box,
+    Heading,
+    Image,
+    Button,
+    Link,
+    Icon,
+    SimpleGrid,
+    List,
+    ListItem,
+    useColorModeValue
+} from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
+import { GridItem } from '../components/grid-item'
+import {
+    IoLogoGithub,
+    IoLogoLinkedin
+} from 'react-icons/io5'
 
 const Page = () => {
     return (
         <Layout>
-            <Container>
+            <Container maxW="container.lg">
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} mt={6} align="center">
-                    Hello 👋 I&apos;m a developer from St Helens
+                    Hello 👋 I&apos;m a creative web developer<br />
+                    <small>Yes - that is a 3D render of my head</small>
                 </Box>
 
                 <Box display={{md:'flex'}}>
@@ -23,7 +41,7 @@ const Page = () => {
                         >
                             Kieran McKelvie
                         </Heading>
-                        <small>⚡ Digital Engineer ( Creator / Developer / Designer )</small>
+                        <small>⚡ Digital Creator / Developer / Designer</small>
                     </Box>
                     <Box flexShrink={0} mt={{base: 4, md:0}} ml={{md: 6}} align="center">
                         <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" maxWidth="100px" dispay="inline-block" borderRadius="full" src="/images/profile-image-3.jpg" alt="Profile Image" />
@@ -86,9 +104,30 @@ const Page = () => {
                         Stack
                     </Heading>
                     <Paragraph>
-                        I coded this portfolio with the <strong>React.js</strong> framework <strong>Next.js</strong>, using <strong>Chakra UI</strong> with <strong>Framer Motion</strong> and <strong>Three.js</strong>.<br />
+                        I coded this portfolio with the <strong>React.js</strong> framework <strong>Next.js</strong>, using <strong>Chakra UI</strong> with <strong>Framer Motion</strong> and <strong>Three.js</strong>. I used <strong>Blender</strong> to create the 3D render of my head.
                     </Paragraph>
-                    <p mt={8}><small>The 3D Render of my head I made using Blender</small></p>
+                    <p mt={8}><small></small></p>
+                </Section>
+                <Section delay={0.4}>
+                    <Heading as="h3" variant="section-title">
+                        Links
+                    </Heading>
+                    <List>
+                        <ListItem>
+                            <Link href="https://github.com/kmckelvie1878" target="_blank">
+                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub} />}>
+                                    GitHub
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="http://linkedin.com/in/kieran-mckelvie" target="_blank">
+                                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoLinkedin} />}>
+                                    LinkedIn
+                                </Button>
+                            </Link>
+                        </ListItem>
+                    </List>
                 </Section>
             </Container>
         </Layout>
