@@ -1,7 +1,7 @@
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-import billyPlaysBanjo from '../public/images/avatar1.png'
+import billyPlaysBanjo from '../public/images/avatar.png'
 import RenderHead from '../public/images/3d-avatar.png'
 import Layout from '../components/layouts/article'
 

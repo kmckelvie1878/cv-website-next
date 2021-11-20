@@ -1,24 +1,13 @@
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/skills";
-exports.ids = ["pages/skills"];
+exports.id = 81;
+exports.ids = [81];
 exports.modules = {
 
-/***/ "./pages/skills.js":
-/*!*************************!*\
-  !*** ./pages/skills.js ***!
-  \*************************/
+/***/ 4451:
 /***/ (() => {
 
-eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL3BhZ2VzL3NraWxscy5qcy5qcyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/skills.js\n");
+
 
 /***/ })
 
@@ -29,7 +18,7 @@ eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./pages/skills.js"));
+var __webpack_exports__ = (__webpack_exec__(4451));
 module.exports = __webpack_exports__;
 
 })();
