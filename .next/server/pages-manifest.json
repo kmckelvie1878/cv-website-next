@@ -1,13 +1,6 @@
 {
-  "/404": "pages/404.js",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/education": "pages/education.js",
-  "/experience": "pages/experience.js",
-  "/": "pages/index.js",
-  "/portfolio": "pages/portfolio.js",
-  "/skills": "pages/skills.js",
-  "/works/billyplaysbanjo": "pages/works/billyplaysbanjo.js",
-  "/works/selfportrait": "pages/works/selfportrait.js",
-  "/_error": "pages/_error.js"
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.js"
 }
