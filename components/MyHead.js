@@ -74,7 +74,7 @@ const MyHead = () => {
             controls.target = target
             setControls(controls)
 
-            loadGLTFModel(scene, '/images/MyHead2.glb', {
+            loadGLTFModel(scene, '/MyHead2.glb', {
                 receiveShadow: false,
                 castShadow: false
             }).then(() => {
