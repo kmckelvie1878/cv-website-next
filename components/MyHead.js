@@ -124,8 +124,8 @@ const MyHead = () => {
         ref={refContainer}
         className='my-head'
         m="auto"
-        mt={[ '0px', '40px', '20px' ]}
-        mb={['-120px', '-150px', '-290px' ]}
+        mt={[ '0px', '0px', '-40px' ]}
+        mb={['-120px', '-150px', '-250px' ]}
         w={[280, 480, 640]}
         h={[280, 480, 640]}
         position="relative"

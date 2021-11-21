@@ -15,6 +15,7 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
+import { WorkImage } from '../components/work'
 // import { GridItem } from '../components/grid-item'
 import {
     IoLogoCss3,
@@ -32,6 +33,7 @@ import {
     IoLogoWordpress
 } from 'react-icons/io5'
 import RadarChart from '../components/skill-matrix'
+import BarChart from '../components/skill-list'
 
 const Page = () => {
     return (
@@ -66,7 +68,7 @@ const Page = () => {
                             </Heading>
                         </Box>
                         <Box flexShrink={0} mt={{base: 4, md:0}} ml={{md: 6}} align="center">
-                            <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" maxWidth="100px" w="96px" h="96px" display="inline-block" borderRadius="full" src="/images/profile-image.png" alt="Profile Image" />
+                            <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" maxWidth="100px" w="96px" h="96px" display="inline-block" borderRadius="full" src="/images/profile.png" alt="Profile Image" />
                         </Box>
                     </Box>
                     <Section delay={0.1}>
@@ -84,63 +86,7 @@ const Page = () => {
                 </Box>
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={6} mb={12} mt={6} boxShadow="xl">
                     <Section delay={0.2}>
-                        <SimpleGrid columns={[1,1,2]} gap={12}>
-                            <Box>
-                                <Heading as="h3" variant="section-title">
-                                    Bio
-                                </Heading>
-                                <BioSection>
-                                    <BioYear>1989</BioYear>
-                                    👶 Born in St Helens, Merseyside.
-                                </BioSection>
-                                <BioSection>
-                                    <BioYear>1998</BioYear>
-                                    ⚽ Had [unsuccessful] trial at Everton Academy.
-                                </BioSection>
-                                <BioSection>
-                                    <BioYear>2001</BioYear>
-                                    💻 Taught myself HTML (at 12 years old).
-                                </BioSection>
-                                <BioSection>
-                                    <BioYear>2003</BioYear>
-                                    🎸 Learned to play the guitar, joined my first band.
-                                </BioSection>
-                                <BioSection>
-                                    <BioYear>2005</BioYear>
-                                    📚 Left school (Sutton Academy, St Helens).
-                                </BioSection>
-                                <BioSection>
-                                    <BioYear>2007</BioYear>
-                                    📜 Graduated from St Helens College with a National Certificate in Music Technology (NC2).
-                                </BioSection>
-                                <BioSection>
-                                    <BioYear>2008</BioYear>
-                                    🎨 Landed first job as a Web Designer.
-                                </BioSection>
-                                <BioSection>
-                                    <BioYear>2014</BioYear>
-                                    👨‍🎓 Graduated from Liverpool John Moore&apos;s University with a Degree in Music Production and Sound Design (FDA).
-                                </BioSection>
-                                <BioSection>
-                                    <BioYear>2015</BioYear>
-                                    👨‍💻 Front End Developer @ Gladstone Brookes.
-                                </BioSection>
-                                <BioSection>
-                                    <BioYear>2017</BioYear>
-                                    📈 Digital Marketing Manager @ Churchill Sloan.<br />
-                                    🏡 Moved to Newton-Le-Willows.
-                                </BioSection>
-                                <BioSection>
-                                    <BioYear>2018</BioYear>
-                                    👔 Web Development Manager @ Gladstone Brookes.
-                                </BioSection>
-                                <BioSection>
-                                    <BioYear>2021</BioYear>
-                                    🔜 To be continued...
-                                </BioSection>
-                            </Box>
-                            <Box p={6} align="center">
-                                <Heading 
+                    <Heading 
                                 as="h3"
                                 fontSize={26}
                                 bgGradient={useColorModeValue('linear(to-l, #202023, #202023)', 'linear(to-l, #0092ff, #2ce388)')}
@@ -151,8 +97,10 @@ const Page = () => {
                                 fontStyle="italic"
                                 textAlign="center"
                                 >
-                                    ATTRIBUTES
+                                    SKILLS &amp; ATTRIBUTES
                                 </Heading>
+                        <SimpleGrid columns={[1,1,2]} gap={12}>
+                            <Box p={6} align="center">
                                 <RadarChart />
                                 <Box mt={4}>
                                     <small>Age: <strong>32</strong></small><br />
@@ -160,9 +108,69 @@ const Page = () => {
                                     <small>Skill Moves: <strong>⭐⭐⭐⭐⭐</strong></small>
                                 </Box>
                             </Box>
+                            <Box p={6} align="center">
+                                <BarChart />
+                            </Box>
                         </SimpleGrid>
                     </Section>
                 </Box>
+                <SimpleGrid columns={[1,1,2]} gap={6}>
+                    <WorkImage src="/images/guitar.png" alt="Guitar" />
+                    <Box h={{base: 831, md: 781, lg: 831}} borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} pt={6} px={6} boxShadow="xl">
+                        <Heading as="h3" variant="section-title">
+                            Bio
+                        </Heading>
+                        <BioSection>
+                            <BioYear>1989</BioYear>
+                            👶 Born in St Helens, Merseyside.
+                        </BioSection>
+                        <BioSection>
+                            <BioYear>1998</BioYear>
+                            ⚽ Had [unsuccessful] trial at Everton Academy.
+                        </BioSection>
+                        <BioSection>
+                            <BioYear>2001</BioYear>
+                            💻 Taught myself HTML.
+                        </BioSection>
+                        <BioSection>
+                            <BioYear>2003</BioYear>
+                            🎸 Learned to play the guitar, joined my first band.
+                        </BioSection>
+                        <BioSection>
+                            <BioYear>2005</BioYear>
+                            📚 Left school (Sutton Academy, St Helens).
+                        </BioSection>
+                        <BioSection>
+                            <BioYear>2007</BioYear>
+                            📜 Graduated from St Helens College with a National Certificate in Music Technology (NC2).
+                        </BioSection>
+                        <BioSection>
+                            <BioYear>2008</BioYear>
+                            🎨 Landed first job as a Web Designer.
+                        </BioSection>
+                        <BioSection>
+                            <BioYear>2014</BioYear>
+                            👨‍🎓 Graduated from Liverpool John Moore&apos;s University with a Degree in Music Production and Sound Design (FDA).
+                        </BioSection>
+                        <BioSection>
+                            <BioYear>2015</BioYear>
+                            👨‍💻 Front End Developer @ Gladstone Brookes.
+                        </BioSection>
+                        <BioSection>
+                            <BioYear>2017</BioYear>
+                            📈 Digital Marketing Manager @ Churchill Sloan.<br />
+                            🏡 Moved to Newton-Le-Willows.
+                        </BioSection>
+                        <BioSection>
+                            <BioYear>2018</BioYear>
+                            👔 Web Development Manager @ Gladstone Brookes.
+                        </BioSection>
+                        <BioSection>
+                            <BioYear>2021</BioYear>
+                            🔜 To be continued...
+                        </BioSection>
+                    </Box>
+                </SimpleGrid>
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={6} mb={12} mt={6} boxShadow="xl">
                     <Section delay={0.4}>
                         <Heading as="h3" variant="section-title">
@@ -175,24 +183,27 @@ const Page = () => {
                             I used <strong>Blender</strong> to create the 3D model of my head and <strong>Three.js</strong> to render it in the DOM.
                         </Paragraph>
                         <Paragraph>
+                            The skills and attributes graphs were created with <strong>ChartJS</strong>.
+                        </Paragraph>
+                        <Paragraph>
                             The site is deployed to/hosted on <strong>Vercel</strong>.
                         </Paragraph>
                         <Paragraph>
                             Some of the languages, frameworks and technologies I have experience with:
                         </Paragraph>
                         <Box display="flex" flexDirection="row" justifyContent="space-around" flexWrap="wrap" mt={6}>
-                            <Icon fontSize={50}  as={IoLogoHtml5} />
-                            <Icon fontSize={50}  as={IoLogoCss3} />
-                            <Icon fontSize={50}  as={IoLogoSass} />
-                            <Icon fontSize={50}  as={IoLogoJavascript} />
-                            <Icon fontSize={50}  as={IoLogoReact} />
-                            <Icon fontSize={50}  as={IoLogoVue} />
-                            <Icon fontSize={50}  as={IoLogoWordpress} />
-                            <Icon fontSize={50}  as={IoLogoGithub} />
-                            <Icon fontSize={50}  as={IoLogoFirebase} />
-                            <Icon fontSize={50}  as={IoLogoNodejs} />
-                            <Icon fontSize={50}  as={IoLogoNpm} />
-                            <Icon fontSize={50}  as={IoLogoVercel} />
+                            <Icon fontSize={50} as={IoLogoHtml5} />
+                            <Icon fontSize={50} as={IoLogoCss3} />
+                            <Icon fontSize={50} as={IoLogoSass} />
+                            <Icon fontSize={50} as={IoLogoJavascript} />
+                            <Icon fontSize={50} as={IoLogoReact} />
+                            <Icon fontSize={50} as={IoLogoVue} />
+                            <Icon fontSize={50} as={IoLogoWordpress} />
+                            <Icon fontSize={50} as={IoLogoGithub} />
+                            <Icon fontSize={50} as={IoLogoFirebase} />
+                            <Icon fontSize={50} as={IoLogoNodejs} />
+                            <Icon fontSize={50} as={IoLogoNpm} />
+                            <Icon fontSize={50} as={IoLogoVercel} />
                         </Box>
                     </Section>
                 </Box>

@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
+    "start": "next start",
     "prettier": "prettier -write .",
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Kieran McKelvie<kieran@mckelvie.dev>",
+  "author": "Kieran McKelvie",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",
