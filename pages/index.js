@@ -79,8 +79,7 @@ const Page = () => {
                             Predominantly a <strong>Front End Developer</strong>, I&apos;m <span style={{textDecoration: "line-through"}}>currently</span> constantly evolving my skills as I aspire to be a full stack developer.<br />I&apos;m passionate about clean code, immersive UX &amp; intuitive UI.
                         </Paragraph>
                         <Paragraph>
-                            Also known as Billy.<br />
-                            <small>Long story!</small>
+                            Also known as Billy.
                         </Paragraph>
                     </Section>
                 </Box>
@@ -189,23 +188,23 @@ const Page = () => {
                             The site is deployed to/hosted on <strong>Vercel</strong>.
                         </Paragraph>
                         <Paragraph>
-                            Some of the languages, frameworks and technologies I have experience with:
+                            Some of the languages, frameworks and technologies I have experience with are displayed below.
                         </Paragraph>
-                        <Box display="flex" flexDirection="row" justifyContent="space-around" flexWrap="wrap" mt={6}>
-                            <Icon fontSize={50} as={IoLogoHtml5} />
-                            <Icon fontSize={50} as={IoLogoCss3} />
-                            <Icon fontSize={50} as={IoLogoSass} />
-                            <Icon fontSize={50} as={IoLogoJavascript} />
-                            <Icon fontSize={50} as={IoLogoReact} />
-                            <Icon fontSize={50} as={IoLogoVue} />
-                            <Icon fontSize={50} as={IoLogoWordpress} />
-                            <Icon fontSize={50} as={IoLogoGithub} />
-                            <Icon fontSize={50} as={IoLogoFirebase} />
-                            <Icon fontSize={50} as={IoLogoNodejs} />
-                            <Icon fontSize={50} as={IoLogoNpm} />
-                            <Icon fontSize={50} as={IoLogoVercel} />
-                        </Box>
                     </Section>
+                </Box>
+                <Box display="flex" flexDirection="row" justifyContent="space-around" flexWrap="wrap" mb={12}>
+                    <Icon fontSize={50} as={IoLogoHtml5} />
+                    <Icon fontSize={50} as={IoLogoCss3} />
+                    <Icon fontSize={50} as={IoLogoSass} />
+                    <Icon fontSize={50} as={IoLogoJavascript} />
+                    <Icon fontSize={50} as={IoLogoReact} />
+                    <Icon fontSize={50} as={IoLogoVue} />
+                    <Icon fontSize={50} as={IoLogoWordpress} />
+                    <Icon fontSize={50} as={IoLogoGithub} />
+                    <Icon fontSize={50} as={IoLogoFirebase} />
+                    <Icon fontSize={50} as={IoLogoNodejs} />
+                    <Icon fontSize={50} as={IoLogoNpm} />
+                    <Icon fontSize={50} as={IoLogoVercel} />
                 </Box>
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={6} mb={12} mt={6} boxShadow="xl">
                     <Section delay={0.4}>

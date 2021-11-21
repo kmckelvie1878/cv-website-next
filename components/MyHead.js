@@ -1,10 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { Box, Spinner } from '@chakra-ui/react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
-// import { render } from 'react-dom'
-// import { animate } from 'framer-motion'
+import { MyHeadSpinner, MyHeadContainer } from './my-head-loader'
 
 function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -78,7 +76,7 @@ const MyHead = () => {
 
             loadGLTFModel(scene, '/images/MyHead2.glb', {
                 receiveShadow: false,
-                castShadow: true
+                castShadow: false
             }).then(() => {
                 animate()
                 setLoading(false)
@@ -88,6 +86,7 @@ const MyHead = () => {
             let frame = 0
             const animate = () => {
                 req = requestAnimationFrame(animate)
+
                 frame = frame <= 100 ? frame + 1 : frame
 
                 if(frame <= 100) {
@@ -95,8 +94,10 @@ const MyHead = () => {
                     const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
 
                     camera.position.y = 7
-                    camera.position.x = p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
-                    camera.position.z = p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
+                    camera.position.x =
+                        p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
+                    camera.position.z =
+                        p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
                     camera.lookAt(target)
                 } else {
                     controls.update()
@@ -106,6 +107,7 @@ const MyHead = () => {
             }
 
             return () => {
+                console.log('unmount')
                 cancelAnimationFrame(req)
                 renderer.dispose()
             }
@@ -120,27 +122,7 @@ const MyHead = () => {
     }, [renderer, handleWindowResize])
 
     return (
-        <Box
-        ref={refContainer}
-        className='my-head'
-        m="auto"
-        mt={[ '0px', '0px', '-40px' ]}
-        mb={['-120px', '-150px', '-250px' ]}
-        w={[280, 480, 640]}
-        h={[280, 480, 640]}
-        position="relative"
-        >
-            {loading && (
-                <Spinner
-                size="xl"
-                position="absolute"
-                left="50%"
-                top="50%"
-                ml="calc(0px - var(--spinner-size) / 2)"
-                mt="calc(0px - var(--spinner-size))"
-                />
-            )}
-        </Box>
+        <MyHeadContainer ref={refContainer}>{loading && <MyHeadSpinner />}</MyHeadContainer>
     )
 }
 

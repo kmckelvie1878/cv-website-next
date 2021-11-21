@@ -1,8 +1,14 @@
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 import Navbar from '../Navbar'
 import { Box, Container } from '@chakra-ui/react'
-import MyHead from '../MyHead'
-// import NoSsr from '../no-ssr'
+import MyHeadLoader from '../my-head-loader'
+import Footer from '../footer'
+
+const LazyMyHead = dynamic(() => import('../MyHead'), {
+    ssr: false,
+    loading: () => <MyHeadLoader />
+  })
 
 const Main = ({ children, router }) => {
     return (
@@ -14,10 +20,9 @@ const Main = ({ children, router }) => {
             </Head>
             <Navbar path={router.asPath} />
             <Container maxW="container.lg" pt={14}>
-                {/* <NoSsr> */}
-                    <MyHead />
-                {/* </NoSsr> */}
+                <LazyMyHead />
                 {children}
+                <Footer />
             </Container>
         </Box>
     )
