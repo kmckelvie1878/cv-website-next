@@ -25,9 +25,9 @@ import {
     IoLogoLinkedin,
     IoLogoNodejs,
     IoLogoNpm,
-    IoLogoPwa,
     IoLogoReact,
     IoLogoSass,
+    IoLogoVercel,
     IoLogoVue,
     IoLogoWordpress
 } from 'react-icons/io5'
@@ -169,10 +169,13 @@ const Page = () => {
                             Stack &amp; Technologies
                         </Heading>
                         <Paragraph>
-                            I coded this portfolio with the <strong>React.js</strong> framework <strong>Next.js</strong>, using <strong>Chakra UI</strong> with <strong>Framer Motion</strong> and <strong>Three.js</strong>.
+                            I coded this portfolio with the <strong>React.js</strong> framework <strong>Next.js</strong>, using <strong>Chakra UI</strong> with <strong>Framer Motion</strong>.
                         </Paragraph>
                         <Paragraph>
-                            I used <strong>Blender</strong> to create the 3D render of my head.
+                            I used <strong>Blender</strong> to create the 3D model of my head and <strong>Three.js</strong> to render it in the DOM.
+                        </Paragraph>
+                        <Paragraph>
+                            The site is deployed to/hosted on <strong>Vercel</strong>.
                         </Paragraph>
                         <Paragraph>
                             Some of the languages, frameworks and technologies I have experience with:
@@ -189,7 +192,7 @@ const Page = () => {
                             <Icon fontSize={50}  as={IoLogoFirebase} />
                             <Icon fontSize={50}  as={IoLogoNodejs} />
                             <Icon fontSize={50}  as={IoLogoNpm} />
-                            <Icon fontSize={50}  as={IoLogoPwa} />
+                            <Icon fontSize={50}  as={IoLogoVercel} />
                         </Box>
                     </Section>
                 </Box>

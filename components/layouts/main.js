@@ -10,6 +10,8 @@ const Main = ({ children, router }) => {
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>Kieran McKelvie | mckelvie.dev</title>
+                <link rel="icon" href="/favicon.ico" />
+                <meta name="description" content="💡 Digital Creator / Developer / Designer from St Helens. Also known as Billy." />
             </Head>
             <Navbar path={router.asPath} />
             <Container maxW="container.lg" pt={14}>
