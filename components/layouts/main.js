@@ -15,8 +15,18 @@ const Main = ({ children, router }) => {
         <Box as="main" pb={8}>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <title>Kieran McKelvie | mckelvie.dev</title>
                 <meta name="description" content="💡 Digital Creator / Developer / Designer from St Helens. Also known as Billy." />
+                <meta name="author" content="Kieran McKelvie" />
+                <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@billymckelvie" />
+                <meta name="twitter:creator" content="@billymckelvie" />
+                <meta name="twitter:image" content="/card.png" />
+                <meta property="og:site_name" content="Kieran McKelvie | mckelvie.dev" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="/card.png" />
+                <title>Kieran McKelvie | mckelvie.dev</title>
             </Head>
             <Navbar path={router.asPath} />
             <Container maxW="container.lg" pt={14}>
