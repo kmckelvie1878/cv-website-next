@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Navbar from '../Navbar'
-import { Box, Container } from '@chakra-ui/react'
+import { Box, Container, useColorModeValue } from '@chakra-ui/react'
 import MyHeadLoader from '../my-head-loader'
 import Footer from '../footer'
 
@@ -30,7 +30,9 @@ const Main = ({ children, router }) => {
             </Head>
             <Navbar path={router.asPath} />
             <Container maxW="container.lg" pt={14}>
-                <LazyMyHead />
+                <Box bg={'url('+useColorModeValue('/images/sign-dark.png', '/images/sign-white.png')+') no-repeat center center / contain'} h={{base: 180, md: 400, lg: 400}}>
+                    <LazyMyHead />
+                </Box>
                 {children}
                 <Footer />
             </Container>
