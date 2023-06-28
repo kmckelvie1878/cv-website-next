@@ -41,7 +41,7 @@ const About = () => {
                 fontSize={13}
                 textAlign={{ base: 'center', md: 'left' }}
               >
-                Frontend Developer / Software Engineer
+                Front End Developer / Software Engineer
               </Heading>
             </Box>
             <Box

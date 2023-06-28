@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 const SummaryList = () => {
     return (
         <StyledSummaryList>
-            <li>💻 Front End Developer.</li>
+            <li>💻 Front End Developer / Software Engineer.</li>
             <li>🚀 Learning Full Stack Development &amp; App Development.</li>
             <li>👨‍💼 Management experience. Leadership qualities.</li>
             <li>🎨 Eye for UI/UX Design.</li>
