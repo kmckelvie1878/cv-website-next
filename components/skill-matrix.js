@@ -1,7 +1,7 @@
 import { Radar } from 'react-chartjs-2'
 
 export const RadarData = {
-    labels: ["Front End Dev", "Back End Dev", "SEO", "WordPress", "Video", "Audio", "3D", "Design"],
+    labels: ["React.JS", "TypeScript", "JavaScript", "HTML", "Next.JS", "CSS", "Vue.JS", "WordPress"],
     datasets: [
         {
             label: "Skill Level",
@@ -12,7 +12,7 @@ export const RadarData = {
             pointHoverBackgroundColor: "#fff",
             pointHoverBorderColor: "#88ccca",
             color: "#888",
-            data: [10, 5, 9, 9, 5, 10, 4, 8]
+            data: [9, 8, 7, 10, 6, 10, 4, 10]
         }
     ]
 }

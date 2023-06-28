@@ -1,7 +1,7 @@
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-import billyPlaysBanjo from '../public/images/avatar.png'
+// import billyPlaysBanjo from '../public/images/avatar.png'
 import RenderHead from '../public/images/3d-avatar.png'
 import Layout from '../components/layouts/article'
 
@@ -22,11 +22,11 @@ const Portfolio = () => {
                             I used Blender to create a 3D render of my head for my website.
                         </WorkGridItem>
                     </Section>
-                    <Section>
+                    {/* <Section>
                         <WorkGridItem id="billyplaysbanjo" title="BillyPlaysBanjo" thumbnail={billyPlaysBanjo}>
                             An avatar I created for my music project using Adobe Illustrator. 
                         </WorkGridItem>
-                    </Section>
+                    </Section> */}
                 </SimpleGrid>
                 <Divider />
             </Container>

@@ -5,18 +5,15 @@ export const BarData = {
         "HTML5",
         "CSS3",
         "SASS / SCSS",
-        "WordPress",
-        "SEO",
-        "JavaScript (ES6)",
         "React.JS",
+        "JavaScript (ES6)",
+        "TypeScript",
         "Next.JS",
-        "Vue.JS",
-        "Nuxt.JS",
         "Firebase",
         "MongoDB",
-        "Express",
+        "GraphQL",
         "Node.JS",
-        "GraphQL"
+        "AWS"
     ],
     datasets: [
         {
@@ -30,7 +27,7 @@ export const BarData = {
             color: "#888",
             categoryPercentage: 0.5,
             barPercentage: 1.0,
-            data: [10, 10, 9, 8, 8, 6, 6, 6, 6, 6, 5, 3, 2, 2, 2],
+            data: [10, 10, 9, 8, 8, 8, 6, 6, 5, 3, 2, 2, 2],
         }
     ]
 }
