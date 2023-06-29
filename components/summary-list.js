@@ -14,7 +14,7 @@ const SummaryList = () => {
             <li>🎬 Video &amp; animation.</li>
             <li>💯 Passionate, charismatic &amp; creative.</li>
             <li>🔥 Multi-talented, self-motivated.</li>
-            <li>🦜 Parrot owner.</li>
+            {/* <li>🦜 Parrot owner.</li> */}
         </StyledSummaryList>
     )
 }
