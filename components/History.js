@@ -26,7 +26,7 @@ const History = () => {
         </BioSection>
         <BioSection>
           <BioYear>2001</BioYear>
-          💻 Taught myself HTML.
+          💻 Learned HTML.
         </BioSection>
         <BioSection>
           <BioYear>2003</BioYear>

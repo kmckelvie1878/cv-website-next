@@ -32,7 +32,7 @@ const Tech = () => {
               Stack &amp; Technologies
             </Heading>
             <Paragraph>
-              I coded this portfolio with <strong>React.js</strong> /{' '}
+              I created this portfolio with <strong>React.js</strong> /{' '}
               <strong>Next.js</strong>, using the <strong>Chakra UI</strong>{' '}
               library, brought to life with <strong>Framer Motion</strong>.
             </Paragraph>

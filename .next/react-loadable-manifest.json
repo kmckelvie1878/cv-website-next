@@ -1,6 +1,6 @@
 {
   "..\\components\\layouts\\main.js -> ../MyHead": {
-    "id": "./components/MyHead.js",
+    "id": "..\\components\\layouts\\main.js -> ../MyHead",
     "files": [
       "static/chunks/components_MyHead_js.js"
     ]
