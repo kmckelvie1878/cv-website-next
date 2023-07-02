@@ -68,7 +68,7 @@ const History = () => {
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
-          ⭕ Frontend Engineer @ Huler.
+          ⭕ Front End Developer @ Huler.
           <br />
           👶 Became a Dad for the first-time.
         </BioSection>

@@ -14,7 +14,7 @@ const Intro = () => {
           Hello 👋 I&apos;m Kieran
           <br />
           <small>
-            I&apos;m a multi-talented developer based in Newton Le Willows
+            Front End Developer from Newton-Le-Willows, UK.
           </small>
         </Box>
     )
